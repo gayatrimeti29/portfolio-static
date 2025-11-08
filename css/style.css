@@ -1,0 +1,26 @@
+:root{--container:1100px}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:var(--container);margin:0 auto;padding:20px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{font-weight:600}
+.site-header nav a{margin-left:12px;text-decoration:none;color:#333}
+.hero{display:flex;gap:20px;align-items:center;padding:28px 0}
+.hero-left{flex:1}
+.hero-right{width:160px}
+.hero-right img{width:100%;border-radius:10px;object-fit:cover}
+h2{margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{border:1px solid #e6e6e6;padding:14px;border-radius:10px;background:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .chip{padding:8px 10px;border-radius:999px;border:1px solid #ddd}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:#111;color:#fff}
+.btn-outline{background:transparent;border:1px solid #111;color:#111}
+form input,form textarea{width:100%;padding:8px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+footer.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:24px}
+.note{color:#555;font-size:0.95rem;margin-top:8px}
+.contact-info p{margin:6px 0}
+@media (max-width:720px){
+  .hero{flex-direction:column}
+  .hero-right{width:100%}
+}

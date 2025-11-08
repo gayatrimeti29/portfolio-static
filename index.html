@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gayatri Meti — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Gayatri Meti</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <h2 id="tagline">Web creator • Python problem-solver</h2>
+        <p id="short-bio">Final-year Computer Science and Engineering student with a strong foundation in software development, web technologies, and IoT solutions. Proficient in multiple programming languages and experienced in project development, teamwork and problem-solving. Eager to contribute to innovative projects and grow through professional opportunities.</p>
+        <div class="cta">
+          <a href="#projects" class="btn">See projects</a>
+          <a href="#resume" class="btn btn-outline">Resume</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- Add your profile image as assets/profile.jpg -->
+        <img id="profile-photo" src="assets/profile.jpg" alt="Profile photo" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi, I'm Gayatri Meti. I'm passionate about building web apps and IoT solutions that solve real problems. I enjoy learning new technologies and working in teams to deliver reliable software.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projects-list" class="grid"></div>
+      <p class="note">Note: repositories not linked yet. Add GitHub links later if you want each card to open the repo or live demo.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skills-list" class="chips"></div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my resume:</p>
+      <a id="resume-link" href="assets/resume.pdf" download class="btn">Download resume (PDF)</a>
+
+      <div id="resume-details">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Final-year BTech in Computer Science and Engineering</li>
+          <li>Strong foundation in software development, web technologies and IoT</li>
+          <li>Interests: web development, embedded systems and full-stack projects</li>
+        </ul>
+
+        <h3>Selected projects</h3>
+        <ol>
+          <li><strong>Solar Tracker System</strong> (Jan 2023 – May 2023) — Designed and implemented a solar panel tracking system that automatically follows the sun. Programmed Arduino UNO with Python for real-time tracking and integrated servo motors, voltage boosters and IoT controllers. <em>Tech:</em> Python, Arduino UNO, servo motors, IoT components</li>
+
+          <li><strong>Minutes of Meeting (MOM) Web Application</strong> (Jun 2024 – Dec 2024) — Full-stack app for managing meeting agendas, action items and decisions in real time. Built responsive UI using React.js and backend APIs with Node.js and Express.js, integrated with MongoDB. <em>Tech:</em> HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, REST API, Git</li>
+        </ol>
+        <p class="note">More project links or details can be added later. If you publish the projects to GitHub, edit the projects list in <code>js/main.js</code> to point to repo URLs.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, use the form or find me on LinkedIn and GitHub.</p>
+
+      <form id="contact-form">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p id="contact-result"></p>
+
+      <div class="contact-info">
+        <p><strong>Phone:</strong> 6363022936</p>
+        <p><strong>GitHub:</strong> <a id="github-link" href="https://github.com/gayatrimeti29" target="_blank">github.com/gayatrimeti29</a></p>
+        <p><strong>LinkedIn:</strong> <a id="linkedin-link" href="https://www.linkedin.com/in/gayatri-r-meti-978704283" target="_blank">Gayatri R Meti</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gayatri Meti</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
